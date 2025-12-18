@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library+ Book Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2F4F4F", // Dark Slate Gray (Professional, Stable)
+                        secondary: "#CD853F", // Peru (Warmth, Leather-like)
+                        background: {
+                            light: "#F5F2EB", // Beige Main
+                            dark: "#1a1a1a",
+                        },
+                        surface: {
+                            light: "#FFFFFF",
+                            dark: "#262626",
+                            dim: "#EBE7DE", // Slightly darker beige for inputs
+                        },
+                        border: {
+                            light: "#DED9CC",
+                            dark: "#404040",
+                        },
+                        text: {
+                            main: {
+                                light: "#2C241B", // Very dark brown
+                                dark: "#F5F5F5",
+                            },
+                            sub: {
+                                light: "#6D645A", // Muted brown-grey
+                                dark: "#A3A3A3",
+                            }
+                        },
+                        status: {
+                            available: "#2E7D32", // Green
+                            loan: "#C62828", // Red/Terracotta
+                            loan_bg: "#FFEBEE",
+                            avail_bg: "#E8F5E9",
+                        },
+                        // Board specific colors (namespaced)
+                        "board-primary": "#8d7b68",
+                        "board-primary-hover": "#756454",
+                        "board-secondary": "#f4f1ea",
+                        "board-accent": "#c5a065",
+                        "board-background-light": "#fdfcfb",
+                        "board-background-dark": "#1c1917",
+                        "board-border-color": "#eae5de",
+                        "board-text-main": "#3e3630",
+                        "board-text-muted": "#888078",
+
+                        // Book Review specific colors (namespaced)
+                        "review-primary": "#8d7b68",
+                        "review-primary-dark": "#726052",
+                        "review-secondary": "#a4907c",
+                        "review-accent": "#c8b6a6",
+                        "review-background-light": "#fdfcf8",
+                        "review-background-dark": "#1c1917",
+                        "review-surface": "#f4efe9",
+                        "review-surface-dark": "#292524",
+
+                        // Write Review specific colors (namespaced)
+                        "write-primary": "#8d6e63",
+                        "write-primary-hover": "#6d4c41",
+                        "write-secondary": "#d7ccc8",
+                        "write-background-light": "#fcfbf9",
+                        "write-background-dark": "#1c1917",
+                        "write-surface-light": "#ffffff",
+                        "write-surface-dark": "#292524",
+                        "write-surface-accent": "#f5f2ef",
+                        "write-text-main": "#3e2723",
+                        "write-text-sub": "#795548",
+                        "write-border-color": "#ebe5e1",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "Noto Sans KR", "sans-serif"],
+                        serif: ["Playfair Display", "Noto Serif KR", "serif"],
+                        "serif-kr": ["Noto Serif KR", "serif"],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(44, 36, 27, 0.08)',
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-sans text-text-main-light dark:text-text-main-dark min-h-screen flex flex-col overflow-hidden selection:bg-primary selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+@layer components {
+    .font-serif-kr {
+        font-family: 'Noto Serif KR', serif;
+    }
+}

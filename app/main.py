@@ -9,7 +9,7 @@ from app.book.endpoint import router as book_router
 app = FastAPI()
 app.include_router(book_router)
 
-@app.get("/")
+@app.get("/api")
 def read_root():
     return {"Hello":"World"}
 

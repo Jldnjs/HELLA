@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Query
 from .kakao_client import fetch_kakao_books
 
-router = APIRouter(prefix="/books", tags=["books"])
+router = APIRouter(prefix="/api/books", tags=["books"])
 
 @router.get("")
 async def search_books(
